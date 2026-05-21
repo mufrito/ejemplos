@@ -1,4 +1,4 @@
-{% extends "base2.html" %}
+{% extends "base.html" %}
 {% block titulo %}Ejercicios-perfil{% endblock %}
 {% block encabezado %}perfil{% endblock %}
 
@@ -10,6 +10,7 @@
             <th>Edad</th>
             <th>Hobby</th>
         </tr>
+        <tr>                          
             <td>{{ usuario.nombre }}</td>
             <td>{{ usuario.edad }}</td>
             <td>{{ usuario.hobby }}</td>

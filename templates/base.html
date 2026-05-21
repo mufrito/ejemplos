@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block titulo %}Ejercicios{% endblock %}</title>
+    <title>{% block titulo %} Ejercicios {% endblock %}</title>
 </head>
 <body>
     <header>
-        {% block encabezado %}Ejercicio{% endblock %} 
-    |</header>
+        {% block encabezado %} Ejercicio {% endblock %} 
+    </header>
     <main>
-        {% block content %}
-        <nav>
+        <nav>                          
             <a href="/perfil">Perfil</a>
             <a href="/calcular">calculadora</a>
             <a href="/equipo">equipo</a>
         </nav>
+        {% block content %}
         {% endblock %}
     </main>
     
